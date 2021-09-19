@@ -1,3 +1,5 @@
-Project Guessing Game
-09/19/21 12:27:20
-29
+# Project Guessing Game
+
+## Makefile was executed at: 09/19/21 12:39:09
+
+## The guessinggame.sh numeber of code lines: 29
