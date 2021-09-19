@@ -9,8 +9,12 @@ calculate () {
     then
         echo "Congratulations, you GUESSED the number of files in this directory, is ${x}."
         exit 0
-    else
-        echo "You entered ${x}, you DID NOT guess the number of files in this directory, just try to enter another number:"
+    elif [[ $files_nr -gt ${x} ]]
+    then
+        echo "You entered ${x}, your guess is Less then the true number, just try to enter another number:"
+    elif [[ $files_nr -lt ${x} ]]
+    then
+     echo "You entered ${x}, your guess is Greater then the true number, just try to enter another number:"
     fi
 }
 
@@ -22,3 +26,4 @@ do
     read x
     calculate
 done
+
